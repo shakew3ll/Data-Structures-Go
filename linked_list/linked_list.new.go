@@ -13,14 +13,14 @@ func LinkedList() {
 	ll.Append(50)
 
 	ll.Traverse(func(value int) {
-		fmt.Printf("%d\n", value) // Use fmt.Printf instead of fmt.Println
+		fmt.Printf("%d\n", value)
 	})
 
 	found, err := ll.Search(20)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 	} else {
-		fmt.Printf("Found: %d\n", found)
+		fmt.Printf("Found: %t\n", found)
 	}
 
 	err = ll.InsertAt(25, 2)
