@@ -27,7 +27,6 @@ func LinkedList() {
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 	}
-	fmt.Println("List after inserting 25 at position 2:")
 	ll.Traverse(func(value int) {
 		fmt.Printf("%d\n", value)
 	})
@@ -36,7 +35,6 @@ func LinkedList() {
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 	}
-	fmt.Println("List after removing 20:")
 	ll.Traverse(func(value int) {
 		fmt.Printf("%d\n", value)
 	})
@@ -51,7 +49,6 @@ func LinkedList() {
 		fmt.Printf("Error: %v\n", err)
 	}
 
-	fmt.Println("Final list:")
 	ll.Traverse(func(value int) {
 		fmt.Printf("%d\n", value)
 	})
@@ -61,7 +58,6 @@ func LinkedList() {
 
 	ll.Reverse()
 
-	fmt.Println("Reversed list:")
 	ll.Traverse(func(value int) {
 		fmt.Printf("%d\n", value)
 	})
