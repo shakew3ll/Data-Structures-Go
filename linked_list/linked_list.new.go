@@ -23,7 +23,10 @@ func LinkedList() {
 		fmt.Println("Found:", found)
 	}
 
-	ll.InsertAt(25, 2)
+	err = ll.InsertAt(25, 2)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
 	fmt.Println("List after inserting 25 at position 2:")
 	ll.Traverse(func(value int) {
 		fmt.Println(value)
@@ -41,15 +44,11 @@ func LinkedList() {
 	err = ll.RemoveFirst()
 	if err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Errorf("Error: %v", err.Error())
 	}
 
 	err = ll.RemoveLast()
 	if err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Errorf("Error: %v", err.Error())
 	}
 
 	fmt.Println("Final list:")
