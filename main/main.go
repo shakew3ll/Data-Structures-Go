@@ -12,21 +12,15 @@ func main() {
 	fmt.Println("################")
 	fmt.Println("# Binary Tree: #")
 	fmt.Println("################")
-	fmt.Println("")
 	binary_tree.BinaryTree()
-	fmt.Println("\n")
 
 	fmt.Println("################")
 	fmt.Println("# Hash Map: #")
 	fmt.Println("################")
-	fmt.Println("")
 	hash_map.HashMap()
-	fmt.Println("\n")
 
 	fmt.Println("################")
 	fmt.Println("# Linked List: #")
 	fmt.Println("################")
-	fmt.Println("")
 	linked_list.LinkedList()
-	fmt.Println("\n")
 }
